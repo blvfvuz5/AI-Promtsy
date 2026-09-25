@@ -1,9 +1,11 @@
-# pr0mptsy
+# pr0mtsy
 
 A universal prompt that turns any topic into a MAXIMAL, complete
 answer. Works with any LLM chat interface. Starts with a numbered
 question round, supports SK!P commands to skip questions, and
 delivers deep, structured output on any topic.
+
+[Prompt](pr0mpt.md) | [License](LICENSE) | [Contributing](CONTRIBUTING.md) | [Changelog](CHANGELOG.md) | [Security](SECURITY.md)
 
 ---
 
@@ -11,12 +13,12 @@ delivers deep, structured output on any topic.
 
 Works with any chat interface that lets you send a text message:
 
-- ChatGPT (chat.openai.com or app)
-- Claude (claude.ai or app)
-- Gemini (gemini.google.com or app)
-- Grok (grok.com or X app)
-- Mistral (chat.mistral.ai)
-- DeepSeek (chat.deepseek.com)
+- ChatGPT
+- Claude
+- Gemini
+- Grok
+- Mistral
+- DeepSeek
 - Perplexity
 - Local models (Ollama, LM Studio, etc.)
 - Any other chat-based LLM
@@ -35,7 +37,7 @@ window as your first message.
 
 1. Open your preferred LLM chat.
 2. Start a new chat.
-3. Open `pr0mpt.md` in this repository.
+3. Open [pr0mpt.md](pr0mpt.md) in this repository.
 4. Click the copy icon in the top-right corner of the code block.
 5. Paste the entire prompt into the chat window.
 6. Send it.
@@ -45,9 +47,9 @@ That's it. The prompt will now run for the rest of the conversation.
 
 ### Do NOT paste it into
 
-- Custom Instructions (ChatGPT, Claude, etc.) - too long
+- Custom Instructions fields - too long
 - System prompt fields - not needed
-- Memory or "Gedankenfenster" fields - wrong place
+- Memory or similar fields - wrong place
 
 It belongs in the **chat window**, as your first message.
 
@@ -78,67 +80,6 @@ phases:
 
 Skipped questions get a sensible assumption, which the model marks
 with `[ASSUMPTION]` in the evaluation step.
-
----
-
-## Example
-
-**You paste the prompt from `pr0mpt.md` into a new chat.**
-
-**You write:**
-```text
-I want to build a website.
-```
-
-**The model responds:**
-```text
-WHAT THIS PROMPT DOES
-
-Turns any topic into a MAXIMAL, complete answer in three phases:
-1. QUESTION ROUND - 6-12 numbered questions first.
-2. SKIP COMMANDS - SK!P, SK!P 2, SK!P all, SK!P [No].
-3. MAXIMAL DELIVERY - Full structured answer, no length limit.
-
-HOW TO START: Write any topic. Skip all: SK!P all -> MAXIMAL
-
----
-
-QUESTION ROUND (answer or skip with SK!P)
-
-1. Language - Which language should I respond in?
-2. What kind of website? (portfolio, shop, blog, SaaS, ...)
-3. Quality 1-10?
-4. Scope: Little / Medium / Lots / MAXIMAL?
-5. Target audience?
-6. Format? (guide, code, checklist, ...)
-7. Should I think of additional extras?
-8. Style? (formal, casual, technical, ...)
-9. Language of the content?
-10. Deadline?
-11. What must NOT be included?
-12. Anything else?
-
-SKIP COMMANDS:
-- "SK!P" -> skip next question
-- "SK!P 2" -> skip next 2 questions
-- "SK!P all" -> skip all remaining
-- "SK!P [No]" -> skip specific question
-```
-
-**You write:**
-```text
-SK!P 2
-```
-
-**The model responds:**
-```text
-Confirmed: questions 1 and 2 skipped.
-[ASSUMPTION] general website, quality 7/10.
-Still open: questions 3-12.
-```
-
-The dialog continues until every question is answered or skipped.
-Then the model enters MAXIMAL mode and delivers the full answer.
 
 ---
 
@@ -180,8 +121,8 @@ Yes. Every new chat starts fresh, so paste the prompt at the start
 of each new conversation.
 
 **Does it work on mobile?**
-Yes. Copy the prompt from `pr0mpt.md`, open your LLM app, paste it
-into a new chat.
+Yes. Copy the prompt from [pr0mpt.md](pr0mpt.md), open your LLM app,
+paste it into a new chat.
 
 **What if I do not want any questions?**
 Write `SK!P all -> MAXIMAL` after your topic.
@@ -192,7 +133,25 @@ readable in any context.
 
 ---
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to contribute.
+
+---
+
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE)
 for the full text.
+
+---
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for version history.
+
+---
+
+## Security
+
+See [SECURITY.md](SECURITY.md) for how to report issues.
