@@ -141,8 +141,15 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for how to contribute.
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE)
-for the full text.
+This project is source-available, not open source.
+
+You may use it for personal, educational, and internal business
+purposes. You may modify and adapt it for your own use.
+
+You may NOT redistribute, publish, share, sublicense, or resell
+this prompt in original or modified form.
+
+See [LICENSE](LICENSE) for the full text.
 
 ---
 
